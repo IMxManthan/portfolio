@@ -778,50 +778,53 @@ Creative motion showcase and editing highlights.
 </video>
 
 </section>
-<section id="reviews">
+<section id="reels">
 
 <div class="section-title">
-
-<h2>Client Reviews</h2>
-
-<p>
-Feedback and creative collaboration experiences.
-</p>
-
+<h2>Reels Portfolio</h2>
+<p>10 Cinematic Reels</p>
 </div>
 
-<div class="portfolio-grid">
+<div class="slider-wrapper">
+<div class="slider-track">
 
-<div class="portfolio-card">
-
-<img src="assets/reviews/review1.jpg">
-
-<div class="portfolio-overlay">
-<h3>Client Feedback</h3>
-</div>
-
-</div>
-
-<div class="portfolio-card">
-
-<img src="assets/reviews/review2.jpg">
-
-<div class="portfolio-overlay">
-<h3>Creative Review</h3>
-</div>
+<video class="slider-item" src="assets/videos/reel1.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel2.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel3.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel4.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel5.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel6.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel7.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel8.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel9.mp4" autoplay muted loop></video>
+<video class="slider-item" src="assets/videos/reel10.mp4" autoplay muted loop></video>
 
 </div>
-
-<div class="portfolio-card">
-
-<img src="assets/reviews/review3.jpg">
-
-<div class="portfolio-overlay">
-<h3>Project Experience</h3>
 </div>
 
+</section>
+<section id="thumbnails">
+
+<div class="section-title">
+<h2>Thumbnail Designs</h2>
+<p>YouTube CTR Designs</p>
 </div>
 
+<div class="slider-wrapper">
+<div class="slider-track">
+
+<img class="slider-item" src="assets/images/thumb1.jpg">
+<img class="slider-item" src="assets/images/thumb2.jpg">
+<img class="slider-item" src="assets/images/thumb3.jpg">
+<img class="slider-item" src="assets/images/thumb4.jpg">
+<img class="slider-item" src="assets/images/thumb5.jpg">
+<img class="slider-item" src="assets/images/thumb6.jpg">
+<img class="slider-item" src="assets/images/thumb7.jpg">
+<img class="slider-item" src="assets/images/thumb8.jpg">
+<img class="slider-item" src="assets/images/thumb9.jpg">
+<img class="slider-item" src="assets/images/thumb10.jpg">
+
+</div>
 </div>
 
 </section>
@@ -1052,6 +1055,53 @@ observer.observe(el);
 });
 
 </script>
+<style>
 
+/* ===== EXTRA SLIDER SYSTEM (SAFE ADDON) ===== */
+
+.slider-wrapper{
+    overflow:hidden;
+    margin-top:40px;
+}
+
+.slider-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scrollLeft 35s linear infinite;
+}
+
+.slider-item{
+    width:280px;
+    height:170px;
+    border-radius:18px;
+    object-fit:cover;
+    flex-shrink:0;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+@keyframes scrollLeft{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+}
+
+/* REVIEW BOX */
+.review-box{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+    color:white;
+}
+
+/* MOBILE FIX */
+@media(max-width:700px){
+    .slider-item{
+        width:220px;
+        height:140px;
+    }
+}
+
+</style>
 </body>
 </html>
