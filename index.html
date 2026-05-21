@@ -88,12 +88,28 @@ nav{
     border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
-.logo{
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    z-index:1001;
+}
+
+.logo-img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+    display:block;
+}
+
+.logo-text{
     font-size:28px;
     font-weight:700;
-    background:linear-gradient(90deg,#00f0ff,#ff00d4);
+    letter-spacing:0.5px;
+    background:linear-gradient(90deg,#00f0ff,#7d7dff,#ff00d4);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    display:inline-block;
 }
 
 nav ul{
@@ -531,7 +547,15 @@ section{
 
 <nav>
 
-<div class="logo">Manthan VFX</div>
+<div class="logo-container">
+
+<img src="./assets/images/logo.png" alt="logo" class="logo-img">
+
+<div class="logo-text">
+Manthan VFX
+</div>
+
+</div>
 
 <ul>
 <li><a href="#home">Home</a></li>
@@ -707,59 +731,24 @@ Modern portfolio and personal websites with aesthetic visuals and animations.
 </p>
 </div>
 
-</div>
-
-</section>
-
-<section id="portfolio">
-
-<div class="section-title">
-
-<h2>Portfolio</h2>
-
+<div class="service-card">
+<h3>Website Creation</h3>
 <p>
-Selected creative projects and visual work.
+Modern portfolio and personal websites with aesthetic visuals and animations.
 </p>
-
 </div>
 
-<div class="portfolio-grid">
-
-<div class="portfolio-card">
-
-<img src="assets/images/project1.jpg">
-
-<div class="portfolio-overlay">
-<h3>Reel Editing</h3>
-</div>
-
-</div>
-
-<div class="portfolio-card">
-
-<img src="assets/images/project2.jpg">
-
-<div class="portfolio-overlay">
-<h3>Motion Graphics</h3>
-</div>
-
-</div>
-
-<div class="portfolio-card">
-
-<img src="assets/images/project3.jpg">
-
-<div class="portfolio-overlay">
-<h3>Thumbnail Design</h3>
-</div>
-
+<div class="service-card">
+<h3>Website Creation</h3>
+<p>
+Modern portfolio and personal websites with aesthetic visuals and animations.
+</p>
 </div>
 
 </div>
 
 </section>
-
-<section class="showreel">
+<section id="portfolio">
 
 <div class="section-title">
 
